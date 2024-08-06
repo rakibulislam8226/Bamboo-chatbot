@@ -1,17 +1,13 @@
 import db
-from chatbot import get_response, load_conversations
+from chatbot import get_response
 
 
 def main():
-    # Path to chat.txt
-    chat_file = "chat.txt"
-
-    # Create database and table
-    db.create_database()
-
-    # Load conversations into the database
-    load_conversations(chat_file)
-
+    """
+    Main function to interact with the chatbot. Assumes that the database has
+    already been created and updated with conversation pairs from chat.txt.
+    Runs an interaction loop to get user input and provide responses.
+    """
     # Interaction loop
     exit_conditions = (":q", "quit", "exit")
     while True:
