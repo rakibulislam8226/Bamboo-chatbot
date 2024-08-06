@@ -86,7 +86,7 @@ def generate_response(user_input, vectorizer, tfidf_matrix, responses, threshold
         return response
     else:
         return (
-            "I am sorry I do not understand, But I store your input for further update."
+            "I am sorry I do not understand, But I store your input for next version update."
         )
 
 

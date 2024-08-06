@@ -13,6 +13,7 @@ def main():
     while True:
         query = input("> ")
         if query.lower() in exit_conditions:
+            print(f"🪴: Bye.")
             break
         else:
             response = get_response(query)
